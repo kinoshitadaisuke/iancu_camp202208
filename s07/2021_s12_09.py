@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/python3.9
 
 #
-# Time-stamp: <2021/05/24 10:10:16 (CST) daisuke>
+# Time-stamp: <2022/08/04 00:24:50 (CST) daisuke>
 #
 
 # importing datetime module
@@ -12,6 +12,12 @@ import numpy
 
 # importing rebound module
 import rebound
+
+# importing ssl module
+import ssl
+
+# allow insecure downloading
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # simulation file to be generated
 file_sim = 'comets.bin'
